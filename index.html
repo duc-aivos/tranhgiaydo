@@ -1,0 +1,404 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodblock Treasures</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favico.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body,
+        html {
+            scroll-behavior: smooth !important;
+        }
+        /* Custom image styles for different sections */
+        .img-hero {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .img-catalog {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .catalog-card img {
+            transition: transform 0.3s;
+        }
+        .catalog-card img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.relative{position:relative}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-3{margin-bottom:0.75rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-2{margin-left:0.5rem}.ml-auto{margin-left:auto}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-5{height:1.25rem}.w-10{width:2.5rem}.w-5{width:1.25rem}.w-72{width:18rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-\[200px\]{max-width:200px}.max-w-\[292px\]{max-width:292px}.max-w-screen-lg{max-width:1024px}.max-w-screen-xl{max-width:1280px}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-10{gap:2.5rem}.gap-2{gap:0.5rem}.gap-20{gap:5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.bg-\[\#f1f1f1\]{--tw-bg-opacity:1;background-color:rgb(241 241 241 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-slate-50{--tw-gradient-from:#f8fafc var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 250 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-slate-100{--tw-gradient-to:#f1f5f9 var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.pb-20{padding-bottom:5rem}.pb-8{padding-bottom:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-black\/80:hover{background-color:rgb(0 0 0 / 0.8)}@media (min-width: 640px){.sm\:h-6{height:1.5rem}.sm\:w-6{width:1.5rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:px-7{padding-left:1.75rem;padding-right:1.75rem}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:gap-16{gap:4rem}.md\:px-0{padding-left:0px;padding-right:0px}.md\:text-left{text-align:left}}@media (min-width: 1024px){.lg\:text-5xl{font-size:3rem;line-height:1}}</style></head>
+
+<body class="antialiased px-4 md:px-0" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1252.0" data-gr-ext-installed=""  spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings">
+    <header>
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <a href="/app.html" style="font-family: 'Nothing You Could Do', cursive;" class="text-xl font-bold">
+                    Woodblock Treasures
+                </a>
+                <button class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                    <svg class="w-5 h-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8426 17.1449C20.5099 17.9135 20.1161 18.6211 19.6598 19.2715C19.0378 20.1583 18.5286 20.7721 18.1361 21.113C17.5277 21.6724 16.8759 21.959 16.1779 21.9753C15.6768 21.9753 15.0725 21.8327 14.3691 21.5434C13.6633 21.2555 13.0148 21.113 12.4217 21.113C11.7998 21.113 11.1327 21.2555 10.4193 21.5434C9.70469 21.8327 9.12904 21.9834 8.68892 21.9984C8.01957 22.0269 7.35239 21.7322 6.68644 21.113C6.26139 20.7422 5.72974 20.1067 5.09285 19.2063C4.40951 18.2449 3.84772 17.13 3.4076 15.8589C2.93624 14.486 2.69995 13.1565 2.69995 11.8694C2.69995 10.3951 3.01853 9.12345 3.65665 8.05784C4.15815 7.20191 4.82533 6.52672 5.66035 6.03105C6.49537 5.53539 7.39761 5.2828 8.36925 5.26664C8.9009 5.26664 9.59809 5.43109 10.4645 5.75429C11.3284 6.07858 11.8832 6.24303 12.1264 6.24303C12.3082 6.24303 12.9245 6.05074 13.9692 5.66738C14.9571 5.31186 15.7909 5.16466 16.474 5.22264C18.3249 5.37202 19.7155 6.10167 20.6402 7.41619C18.9849 8.4192 18.166 9.82403 18.1823 11.6262C18.1972 13.03 18.7065 14.1981 19.7073 15.1256C20.1609 15.5561 20.6674 15.8888 21.231 16.1251C21.1087 16.4795 20.9797 16.819 20.8426 17.1449ZM16.5975 0.440369C16.5975 1.54062 16.1956 2.56792 15.3944 3.51878C14.4275 4.64917 13.258 5.30236 11.9898 5.19929C11.9736 5.06729 11.9642 4.92837 11.9642 4.78239C11.9642 3.72615 12.424 2.59576 13.2406 1.67152C13.6483 1.20356 14.1667 0.814453 14.7955 0.504058C15.4229 0.198295 16.0163 0.0292007 16.5744 0.000244141C16.5907 0.147331 16.5975 0.294426 16.5975 0.440355V0.440369Z" fill="white"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-lg py-10 pb-20">
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div style="min-width:300px;" data-aos="fade-right" data-aos-delay="50" class="aos-init aos-animate">
+                    <img class="img-hero" src="https://images.unsplash.com/photo-1719338204313-2c5d818a020b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxfHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Group of Children Playing - Traditional Woodblock Print">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200" class="aos-init aos-animate">
+                    <h1 class="text-2xl font-bold lg:text-5xl pb-8">Tranh Đông Hồ Việt Nam</h1>
+                    <p class="text-xl pb-8">
+                        Discover a curated collection of traditional woodblock prints that celebrate centuries of craftsmanship. 
+                        Each artwork is meticulously printed on authentic dó paper, preserving rich cultural heritage and artistic legacy.
+                    </p>
+                    <a href="#catalog" class="mb-8 inline-block text-white bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                        Shop Our Collection <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <div class="bg-gray-100 p-5 rounded max-w-[292px] flex gap-2 items-center text-center">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-1.11L12 2l-2.81 6.13L2 9.24l5.46 4.73L5.82 21z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-1.11L12 2l-2.81 6.13L2 9.24l5.46 4.73L5.82 21z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-1.11L12 2l-2.81 6.13L2 9.24l5.46 4.73L5.82 21z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-1.11L12 2l-2.81 6.13L2 9.24l5.46 4.73L5.82 21z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-1.11L12 2l-2.81 6.13L2 9.24l5.46 4.73L5.82 21z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-dark text-xs">Trusted by Collectors Worldwide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-20">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8 text-center">
+                Our Collection
+            </h2>
+            <p class="mb-12 text-xl text-center">
+                Browse our exclusive selection of woodblock prints, each a masterpiece preserving the ancient art of woodcutting.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1719338204313-2c5d818a020b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxfHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Group of Children Playing">
+                    <h3 class="mt-4 font-semibold text-lg">Group of Children Playing</h3>
+                    <p class="text-sm text-gray-600">By Kwazan (b.1793-d.1841)</p>
+                    <p class="mt-2 font-bold">$250</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://storage.googleapis.com/storage-aivos/chatgpt-image-044020-6-thg-9-2025-1757126365834-506154311.png" alt="Two Women and a Child Beside a Goldfish Tank">
+                    <h3 class="mt-4 font-semibold text-lg">Two Women and a Child Beside a Goldfish Tank</h3>
+                    <p class="text-sm text-gray-600">c. 1800, Katsushika Hokusai</p>
+                    <p class="mt-2 font-bold">$300</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1683661649566-dadf60e219ad?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwzfHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Courtesan and Sleeping Attendant">
+                    <h3 class="mt-4 font-semibold text-lg">Courtesan and Sleeping Attendant</h3>
+                    <p class="text-sm text-gray-600">late 1760s, Suzuki Harunobu</p>
+                    <p class="mt-2 font-bold">$400</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1708765471424-447a4d4c3940?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw0fHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Eisen Tomioka, Nigorimizu">
+                    <h3 class="mt-4 font-semibold text-lg">Eisen Tomioka, Nigorimizu</h3>
+                    <p class="text-sm text-gray-600">1899 woodblock print</p>
+                    <p class="mt-2 font-bold">$350</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 5 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1719339059767-d94cb1fd4902?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw1fHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Yanage Hashi, Yukei Manpachi">
+                    <h3 class="mt-4 font-semibold text-lg">Yanage Hashi, Yukei Manpachi</h3>
+                    <p class="text-sm text-gray-600">A Geisha Returning to the House – Utagawa Hiroshige</p>
+                    <p class="mt-2 font-bold">$375</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 6 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1719338204405-d540bca615e0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw2fHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Bales Being Loaded into a Boat">
+                    <h3 class="mt-4 font-semibold text-lg">Bales Being Loaded into a Boat</h3>
+                    <p class="text-sm text-gray-600">By Ando Hiroshige</p>
+                    <p class="mt-2 font-bold">$290</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 7 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1719338204176-bdcad1a18f4f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw3fHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Leaping Carp and Wisteria">
+                    <h3 class="mt-4 font-semibold text-lg">Leaping Carp and Wisteria</h3>
+                    <p class="text-sm text-gray-600">1896, Toyohara Chikanobu</p>
+                    <p class="mt-2 font-bold">$410</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 8 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1719338205041-a568d3d5ee95?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw4fHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Snow on the Banks of the Sumida River">
+                    <h3 class="mt-4 font-semibold text-lg">Snow on the Banks of the Sumida River</h3>
+                    <p class="text-sm text-gray-600">1810, Katsukawa Shunsen</p>
+                    <p class="mt-2 font-bold">$320</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 9 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1708765471915-e5a81329359c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw5fHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Isshō by Keishū Takeuchi">
+                    <h3 class="mt-4 font-semibold text-lg">Isshō by Keishū Takeuchi</h3>
+                    <p class="text-sm text-gray-600">1910 woodblock print</p>
+                    <p class="mt-2 font-bold">$360</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+                <!-- Product 10 -->
+                <div class="catalog-card border border-gray-200 rounded-lg p-4">
+                    <img class="img-catalog" src="https://images.unsplash.com/photo-1699005736229-83c037a47ca6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxMHx8V29vZGJsb2NrfGVufDB8fHx8MTc1NzEyNjEyMXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Furuichi Dance at the Hisagataya">
+                    <h3 class="mt-4 font-semibold text-lg">Furuichi Dance at the Hisagataya</h3>
+                    <p class="text-sm text-gray-600">Mid 1820s, Gakutei Harunobu</p>
+                    <p class="mt-2 font-bold">$430</p>
+                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-black/80 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History & Technique Section -->
+    <section id="history" class="bg-[#f1f1f1] py-20">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8 text-center">
+                The Art of Woodblock Printing
+            </h2>
+            <p class="mb-6 text-xl text-center">
+                Explore the rich history and refined techniques behind traditional woodblock printing. Our prints are created using time-honored methods that have been passed down through generations.
+            </p>
+            <p class="text-lg max-w-3xl mx-auto">
+                Woodblock printing is not only an art form; it is a medium through which culture, tradition, and aesthetics are interwoven. Each print is meticulously carved by skilled artisans and carefully printed on authentic dó paper – a material celebrated for its texture and durability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dó Paper & Cultural Significance Section -->
+    <section id="paper" class="py-20">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="w-full max-w-[200px]">
+                    <img class="w-full rounded" src="https://images.unsplash.com/photo-1719338205041-a568d3d5ee95?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw4fHxEw4kgUGFwZXJ8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Dó Paper Texture">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                        Authentic Dó Paper
+                    </h2>
+                    <p class="mt-3">
+                        Our woodblock prints are produced on traditional dó paper, renowned for its unique texture and longevity.
+                        This paper is a vital component of the artwork, enhancing both its visual appeal and historical value.
+                    </p>
+                    <p class="mt-3">
+                        Celebrated for its cultural significance, dó paper is an emblem of craftsmanship and artistic integrity. It provides the ideal canvas that upholds and elevates the intricate details captured in each print.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="FAQ" class="bg-[#f1f1f1] py-20">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <div class="flex items-center">
+                <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                    <span style="font-family: 'Nothing You Could Do', cursive;">Frequently</span> Asked Questions
+                </h2>
+                <img class="ml-auto w-full max-w-[200px] rounded" src="https://images.unsplash.com/photo-1708765471915-e5a81329359c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw5fHxXb29kYmxvY2t8ZW58MHx8fHwxNzU3MTI2MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Customer Inquiry">
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-16">
+                <div>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">What is traditional woodblock printing?</h5>
+                    <p>
+                        It is an ancient art form in which artists carve intricate designs into wooden blocks and use them to print images on paper. Our prints are created using authentic techniques passed down over centuries.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">What makes dó paper special?</h5>
+                    <p>
+                        Dó paper is renowned for its unique texture and durability. It enhances the details of the print while preserving its traditional charm.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Are these prints limited edition?</h5>
+                    <p>
+                        Yes. Each print is produced in a limited run to maintain exclusivity and ensure high quality.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">How do I care for my woodblock print?</h5>
+                    <p>
+                        To maintain the quality of your print, avoid direct sunlight and high humidity. Gently dust with a soft brush to preserve its longevity.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">What payment methods do you accept?</h5>
+                    <p>
+                        We support secure payment methods including major credit cards, PayPal, and other trusted gateways.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Do you offer international shipping?</h5>
+                    <p>
+                        Yes, we ship worldwide with a variety of shipping options tailored for international customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8 text-center">
+                Customer Testimonials
+            </h2>
+            <div class="swiper swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden">
+                <div class="swiper-wrapper items-center flex flex-row" id="swiper-wrapper-21a96f36a10fa83c" aria-live="off">
+                    
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 2" data-swiper-slide-index="1" style="width: 298.5px; margin-right: 10px;">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    I was blown away by the vivid details. The prints are a perfect blend of art and history.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="Reviewer" src="./imgs/LB_arrondi.png" class="mx-auto object-cover rounded-full h-10 w-10 ">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">Jordan Lee</span>
+                                        <span class="flex items-center text-xs">Collector</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    The ease of purchase and secure payment process made my experience seamless. Highly recommended!
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="Reviewer" src="./imgs/LB_arrondi.png" class="mx-auto object-cover rounded-full h-10 w-10 ">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">Samuel Ortiz</span>
+                                        <span class="flex items-center text-xs">Returning Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional slides can be added similarly if needed -->
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="1 / 2" data-swiper-slide-index="0" style="width: 298.5px; margin-right: 10px;">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    The craftsmanship of these woodblock prints is exceptional. Each piece tells a story.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="Reviewer" src="./imgs/LB_arrondi.png" class="mx-auto object-cover rounded-full h-10 w-10 ">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">Alex Rivera</span>
+                                        <span class="flex items-center text-xs">Art Collector</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    I appreciate the rich history and quality behind each print. A true treasure for my collection.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="Reviewer" src="./imgs/LB_arrondi.png" class="mx-auto object-cover rounded-full h-10 w-10 ">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">Maya Chen</span>
+                                        <span class="flex items-center text-xs">Art Enthusiast</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+    </section>
+
+    <footer class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <p class="mb-8 text-sm text-center text-gray-700 md:text-left md:mb-0">© Copyright 2023 Woodblock Treasures. All Rights Reserved.</p>
+                <button class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                    <svg class="w-5 h-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8426 17.1449C20.5099 17.9135 20.1161 18.6211 19.6598 19.2715C19.0378 20.1583 18.5286 20.7721 18.1361 21.113C17.5277 21.6724 16.8759 21.959 16.1779 21.9753C15.6768 21.9753 15.0725 21.8327 14.3691 21.5434C13.6633 21.2555 13.0148 21.113 12.4217 21.113C11.7998 21.113 11.1327 21.2555 10.4193 21.5434C9.70469 21.8327 9.12904 21.9834 8.68892 21.9984C8.01957 22.0269 7.35239 21.7322 6.68644 21.113C6.26139 20.7422 5.72974 20.1067 5.09285 19.2063C4.40951 18.2449 3.84772 17.13 3.4076 15.8589C2.93624 14.486 2.69995 13.1565 2.69995 11.8694C2.69995 10.3951 3.01853 9.12345 3.65665 8.05784C4.15815 7.20191 4.82533 6.52672 5.66035 6.03105C6.49537 5.53539 7.39761 5.2828 8.36925 5.26664C8.9009 5.26664 9.59809 5.43109 10.4645 5.75429C11.3284 6.07858 11.8832 6.24303 12.1264 6.24303C12.3082 6.24303 12.9245 6.05074 13.9692 5.66738C14.9571 5.31186 15.7909 5.16466 16.474 5.22264C18.3249 5.37202 19.7155 6.10167 20.6402 7.41619C18.9849 8.4192 18.166 9.82403 18.1823 11.6262C18.1972 13.03 18.7065 14.1981 19.7073 15.1256C20.1609 15.5561 20.6674 15.8888 21.231 16.1251C21.1087 16.4795 20.9797 16.819 20.8426 17.1449ZM16.5975 0.440369C16.5975 1.54062 16.1956 2.56792 15.3944 3.51878C14.4275 4.64917 13.258 5.30236 11.9898 5.19929C11.9736 5.06729 11.9642 4.92837 11.9642 4.78239C11.9642 3.72615 12.424 2.59576 13.2406 1.67152C13.6483 1.20356 14.1667 0.814453 14.7955 0.504058C15.4229 0.198295 16.0163 0.0292007 16.5744 0.000244141C16.5907 0.147331 16.5975 0.294426 16.5975 0.440355V0.440369Z" fill="white"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },
+            freeMode: true,
+            breakpoints: {
+                1320: {
+                    slidesPerView: 4
+                },
+                1000: {
+                    slidesPerView: 3
+                },
+                700: {
+                    slidesPerView: 2
+                },
+                100: {
+                    slidesPerView: 1
+                }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body></html>
